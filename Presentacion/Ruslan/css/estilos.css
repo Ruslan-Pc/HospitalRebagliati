@@ -147,3 +147,17 @@ textarea{
   padding: 10px;
   box-sizing: border-box;/*Va tener el 100% pero el padding no se va contar*/
 }
+.menu_inicio{
+  font-size: 35px;
+}
+.menu_late{
+  font-size: 17px;
+}
+.title_articu{
+  text-align: center;
+  font-size: 29px;
+}
+.Conten-articl{
+  text-align: justify;
+  padding: 0px 20px 0px 20px;
+}
