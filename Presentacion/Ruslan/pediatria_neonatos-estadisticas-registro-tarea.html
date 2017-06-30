@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Blog de Rus</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/estilos.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css">
+	</head>
+
+
+	<body>
+		<section class="jumbotron">
+			<div class="container-fluid">
+				<h1 class="titulo-blog">Servicio De Nutricion</h1>
+				<p>Lic. Maria Elena</p>
+			</div>
+		</section>
+
+		<div class="row affix-row">
+    		<div class="col-xs-12 col-sm-3 col-md-2 navbar navbar-default" role="navigation">
+			   	<div class="navbar-header">
+			     	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+			           <span class="sr-only">Toggle navigation</span>
+			           <span class="icon-bar"></span>
+			           <span class="icon-bar"></span>
+			           <span class="icon-bar"></span>
+			         </button>
+				   	<span class="visible-xs navbar-brand">Sidebar menu</span>
+				</div>
+				<div class="navbar-collapse collapse sidebar-navbar-collapse">
+					<ul class="nav nav-pills nav-stacked">
+						<li>
+					       	<a href="#">
+					       		<h3  class="menu_inicio"><span class="fa fa-hospital-o fa-2x" aria-hidden="true"></span> Inicio</h3>
+					       	</a>
+				       </li>
+						<li>
+							<a class="menu_late" href="#" data-toggle="collapse" data-target="#toggleDemo1" data-parent="#sidenav01" class="collapsed">
+						 		<span class="fa fa-clipboard fa-2x" aria-hidden="false"></span> Registro de pedido <span class="caret"></span>
+						 	</a>
+						 	<div class="collapse" id="toggleDemo1">
+					   			<ul class="nav nav-list">
+					           		<li><a class="menu_late" href="#"> Nueva Solicitud</a></li>
+					           		<li><a class="menu_late" href="#"> Bandeja de pedidos</a></li>
+					   			</ul>
+				 			</div>
+						</li>
+						<li>
+							<a class="menu_late" href="#" data-toggle="collapse" data-target="#toggleDemo2" data-parent="#sidenav02" class="collapsed">
+						 		<span class="fa fa-calculator fa-2x" aria-hidden="flase"></span> Formulas Lacteas<span class="caret"></span>
+						 	</a>
+						 	<div class="collapse" id="toggleDemo2">
+					   			<ul class="nav nav-list">
+					           		<li><a class="menu_late" href="#"> Correccion de Datos</a></li>
+					           		<li><a class="menu_late" href="#"> Bandeja Aprobada</a></li>
+					   			</ul>
+				 			</div>
+						</li>
+						<li class="active">
+							<a class="menu_late" href="#" data-toggle="collapse" data-target="#toggleDemo3" data-parent="#sidenav03" class="collapsed">
+						 		<span class="fa fa-pie-chart fa-2x" aria-hidden="true"></span> Estadisticas<span class="caret"></span>
+						 	</a>
+						 	<div class="collapse in" id="toggleDemo3">
+					   			<ul class="nav nav-list">
+					           		<li><a class="menu_late" href="#"> Estadistica Nutricional</a></li>
+					           		<li><a class="menu_late" href="#"> Estadistica FL</a></li>
+					           		<li><a class="menu_late" href="#"> Registro de Tareas</a></li>
+					   			</ul>
+				 			</div>
+						</li>
+				       	<li>
+							<a class="menu_late" href="#"><span class="fa fa-file-text fa-2x" aria-hidden="true"></span> Reporte</a>
+						</li>			       
+				       	<li>
+				 			<a class="menu_late" href="#"><span class="fa fa-id-card-o fa-2x" aria-hidden="true"></span> Administracion</a>
+				       	</li>
+				       	<li>
+				       		<a class="menu_late" href="#"><span class="fa fa-user-secret fa-2x" aria-hidden="true"></span> Seguridad</a>
+				       	</li>
+			   		</ul>
+			   	</div>
+			</div>
+			<div class="col-xs-12 col-sm-9 col-md-10 affix-content">
+				<div class="container-fluid"><br>
+			        <section class="jumbotron">
+						<h1 class="titulo-blog">Estadisticas de Registro de Tareas</h1>
+					</section>
+			    </div>
+				<div class="row"><br>
+				        <div class="col-xs-12">	<br>
+				        	<form class="form-group">
+				        			<div class="col-sm-6">
+				        				<div class="form-group">
+									    	<label for="NumerSolict">Horario:</label>
+									    	<select class="form-control selectpicker">
+												<option>Mañana</option>
+												<option>Tarde</option>
+												<option>Noche</option>
+											</select>
+									  	</div>							
+				        			</div>
+									<div class="col-sm-6">	
+										<div class="form-group">
+									    	<label for="EstadSolic">Fecha de Aprobacion</label>
+									    	<input type="date" class="form-control" id="EstadSolic"></input>
+									  	</div>
+									</div>
+							</form>
+				        </div>
+				    </div>
+				    <div class="container-fluid">
+				    	<div class="col-sm-12"><h4>Historia de Solicitud</h4></div>
+				    	<div class="col-sm-12">
+				    		<div class="container">
+								<div class="row">
+									<div class="col-md-12">
+										<table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+									        <thead>
+									            <tr>
+									                <th>Name</th>
+									                <th>Position</th>
+									                <th>Office</th>
+									                <th>Age</th>
+									                <th>Start date</th>
+									                <th>Salary</th>
+									            </tr>
+									        </thead>
+									        <tfoot>
+									            <tr>
+									                <th>Name</th>
+									                <th>Position</th>
+									                <th>Office</th>
+									                <th>Age</th>
+									                <th>Start date</th>
+									                <th>Salary</th>
+									            </tr>
+									        </tfoot>
+									        <tbody>
+									            <tr>
+									                <td>Tiger Nixon</td>
+									                <td>System Architect</td>
+									                <td>Edinburgh</td>
+									                <td>61</td>
+									                <td>2011/04/25</td>
+									                <td>$320,800</td>
+									            </tr>
+									            <tr>
+									                <td>Garrett Winters</td>
+									                <td>Accountant</td>
+									                <td>Tokyo</td>
+									                <td>63</td>
+									                <td>2011/07/25</td>
+									                <td>$170,750</td>
+									            </tr>
+									            <tr>
+									                <td>Ashton Cox</td>
+									                <td>Junior Technical Author</td>
+									                <td>San Francisco</td>
+									                <td>66</td>
+									                <td>2009/01/12</td>
+									                <td>$86,000</td>
+									            </tr>
+									            <tr>
+									                <td>Cedric Kelly</td>
+									                <td>Senior Javascript Developer</td>
+									                <td>Edinburgh</td>
+									                <td>22</td>
+									                <td>2012/03/29</td>
+									                <td>$433,060</td>
+									            </tr>
+									            <tr>
+									                <td>Airi Satou</td>
+									                <td>Accountant</td>
+									                <td>Tokyo</td>
+									                <td>33</td>
+									                <td>2008/11/28</td>
+									                <td>$162,700</td>
+									            </tr>
+									            <tr>
+									                <td>Brielle Williamson</td>
+									                <td>Integration Specialist</td>
+									                <td>New York</td>
+									                <td>61</td>
+									                <td>2012/12/02</td>
+									                <td>$372,000</td>
+									            </tr>
+									            <tr>
+									                <td>Herrod Chandler</td>
+									                <td>Sales Assistant</td>
+									                <td>San Francisco</td>
+									                <td>59</td>
+									                <td>2012/08/06</td>
+									                <td>$137,500</td>
+									            </tr>
+									            <tr>
+									                <td>Rhona Davidson</td>
+									                <td>Integration Specialist</td>
+									                <td>Tokyo</td>
+									                <td>55</td>
+									                <td>2010/10/14</td>
+									                <td>$327,900</td>
+									            </tr>
+									            
+									        </tbody>
+									    </table>
+									</div>
+								</div>
+							</div>
+				    	</div>
+
+				    	<div class="col-sm-12">
+				    		<br>
+				    		<form class="form-group">
+				    			<div class="col-xs-2">
+				    				<button class="btn btn-success btn-lg btn-block"><span class="fa fa-file-excel-o fa-lg" aria-hidden="true"></span> Exportar</button>
+				    			</div>
+				    			<div class="col-xs-2 col-xs-offset-8">
+				    				<button class="btn btn-danger btn-lg btn-block"><span class="fa fa-power-off fa-lg" aria-hidden="true"></span> Salir</button>
+				    			</div>
+				    		</form>
+				    	</div>
+				    </div>
+			    </div>
+			</div>
+		</div>
+		<!--<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>-->
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>﻿
+	</body>
+</html>
