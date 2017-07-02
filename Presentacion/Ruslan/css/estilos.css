@@ -44,6 +44,9 @@ make sidebar nav vertical
     padding-bottom: 12px;
   }  
 }
+.navbar-inverse {
+    margin: 0px;
+}
 html,body{
     font-family: 'Ravi Prakash', cursive;
     height: 100%;
@@ -104,11 +107,12 @@ html,body{
 }
 .Argumen{
   background: #E3F4FB;
-  margin-top: 20px;
+  
+  margin: 20px -20px 0px -20px;
 }
 .well{
-	height:250px;
-  background: #E3F4FB;
+	height:200px;
+  background: #E3F4FB;  
   border:0px solid #fff;
 }
 .well h3{
@@ -118,23 +122,6 @@ html,body{
 .well p{
 	margin-top:20px;
   font-size: 16px;
-}
-
-.jumbotron{
-	/*height: 40%;*/
-  background: #1DE2DC;
-	padding-top:15px;
-	padding-bottom:5px; 
-	margin-bottom:0px;
-}
-.jumbotron h1{
-	font-size:3.8em;
-	margin:0px;
-}
-footer{
-	height: 50px;
-	background: #16a085;
-	color:#fff;
 }
 textarea{
   resize:vertical;/*Para que el textarea cambie*/
@@ -155,9 +142,20 @@ textarea{
 }
 .title_articu{
   text-align: center;
-  font-size: 29px;
+  font-size: 25px;
 }
 .Conten-articl{
   text-align: justify;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 10px 0px 10px;
+}
+.jumbotron{
+  /*height: 40%;*/
+  background: #1DE2DC;
+  padding-top:15px;
+  padding-bottom:5px; 
+  margin-bottom:0px;
+}
+.jumbotron h1{
+  font-size:3.8em;
+  margin:0px;
 }
