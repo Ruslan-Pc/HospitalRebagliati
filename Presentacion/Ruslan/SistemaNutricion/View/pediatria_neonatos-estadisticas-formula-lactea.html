@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Hospital Rebagliati</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/estilos.css">
+		<link rel="stylesheet" href="css/estilo_late.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css">
+    	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
+	</head>
+
+	<body>
+		<nav class="cabezera navbar">
+			<div class="row">
+			      	<div class="col-xs-12 col-sm-2 col-sm-offset-8">
+			      		<form class="navbar-form" >
+			      			<button type="submit" class="btn btn-link btn-block user"><span class="fa fa-user-plus fa-lg" aria-hidden="true"></span> &nbsp; Lic. Maria Elena</button>   			
+						</form>
+			      	</div>
+			      	<div class="col-xs-12 col-sm-2 ">
+			      		<form class="navbar-form">
+		        			<button type="submit" class="btn btn-default btn-block"><span class="fa fa-times fa-lg" aria-hidden="true"></span> Salir</button>
+						</form>
+			      	</div>
+			</div>
+		</nav>
+		<div class="row affix-row">
+    		<div class="col-xs-12 col-sm-3 affix-content">
+	    		<div class="nav-side-menu">
+				    <div class="brand"><i class="fa fa-university fa-lg" aria-hidden="true"></i> &nbsp; Hospital Rebagliati</div>
+				    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+				  
+				        <div class="menu-list">
+				  
+				            <ul id="menu-content" class="menu-content collapse out">
+				                <li>
+				                  	<a href="inicio.html">
+							       		<i class="fa fa-hospital-o fa-lg" aria-hidden="true"></i> &nbsp; Inicio
+							       	</a>
+				                </li>
+
+				                <li  data-toggle="collapse" data-target="#RegistroPepido" class="collapsed">
+				                  <a href="#"><i class="fa fa-clipboard fa-lg" aria-hidden="true"></i> &nbsp; Registro de pedido<span class="arrow"></span></a>
+				                </li>
+				                <ul class="sub-menu collapse" id="RegistroPepido">
+				                    <li><a href="pediatria_neonatos-registro-pedidos-nueva-solicitud.html"> &nbsp; Nueva Solicitud</a></li>
+					           		<li><a href="pediatria_neonatos-registro-pedidos-bandeja-solicitud.html"> &nbsp; Bandeja de pedidos</a></li>
+				                </ul>
+
+
+				                <li data-toggle="collapse" data-target="#FormuLacte" class="collapsed">
+				                  <a href="#"><i class="fa fa-calculator fa-lg" aria-hidden="true"></i> &nbsp; Formulas Lacteas<span class="arrow"></span></a>
+				                </li>  
+				                <ul class="sub-menu collapse" id="FormuLacte">
+				                  	<li><a href="pediatria_neonatos-formula-lactios-correccion-datos.html"> &nbsp; Correccion de Datos</a></li>
+					           		<li><a href="pediatria_neonatos-formula-lactios-bandeja-aprobacion.html"> &nbsp; Bandeja Aprobada</a></li>
+				                </ul>
+
+
+				                <li data-toggle="collapse" data-target="#Estadistica" class="collapsed active">
+				                  <a href="#"><i class="fa fa-pie-chart fa-lg" aria-hidden="true"></i> &nbsp; Estadisticas<span class="arrow"></span></a>
+				                </li>
+				                <ul class="sub-menu collapse in" id="Estadistica">
+				                  	<li><a class="menu_late" href="pediatria_neonatos-estadisticas-informacion-nutricional.html"> &nbsp; Informacion Nutricional</a></li>
+					           		<li class="active"><a class="menu_late" href="pediatria_neonatos-estadisticas-formula-lactea.html"> &nbsp; Estadistica FL</a></li>
+					           		<li><a class="menu_late" href="pediatria_neonatos-estadisticas-registro-tarea.html"> &nbsp; Registro de Tareas</a></li>
+				                </ul>
+
+
+				                 <li>
+				                  <a href="pediatria_neonatos-reporte.html">
+				                  	<i class="fa fa-file-text fa-lg" aria-hidden="true"></i> &nbsp; Reporte</a>
+				                  </a>
+				                  </li>
+
+				                 <li>
+				                  <a href="#">
+				                  	<i class="fa fa-id-card-o fa-lg" aria-hidden="true"></i> &nbsp; Administracion
+				                  </a>
+				                </li>
+				                <li>
+				                  <a href="#">
+				                  	<i class="fa fa-user-secret fa-lg" aria-hidden="true"></i> &nbsp; Seguridad
+				                  </a>
+				                </li>
+				            </ul>
+				     </div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-9 affix-content">
+				<div class="container"><br>
+					<div class="panel panel-primary">
+						<div class="panel-heading"><h1>Estadisticas de Formulas Lacteas</h1></div>
+						<div class="panel-body">
+							<div class="container-fluid">
+						        <div class="col-xs-12 col-md-7  col-md-offset-5 ">
+						        	<form class="form-group">
+					        			<div class="col-sm-6">
+					        				<div class="form-group">
+										    	<label for="Mes">Mes:</label>
+										    	<select class="form-control selectpicker">
+													<option>Enero</option>
+													<option>Febrero</option>
+													<option>Marzo</option>
+													<option>Abril</option>
+													<option>Mayo</option>
+													<option>Junio</option>
+													<option>Julio</option>
+													<option>Agosto</option>
+													<option>Setiembre</option>
+													<option>Octubre</option>
+													<option>Noviembre</option>
+													<option>Diciembre</option>												
+												</select>
+										  	</div>							
+					        			</div>
+										<div class="col-sm-6">	
+											<div class="form-group">
+										    	<label for="Año">Año:</label>
+										    	<select class="form-control selectpicker">
+													<option></option>
+													<option></option>
+													<option></option>
+													<option></option>
+													<option></option>
+													<option></option>
+													<option></option>
+													<option></option>
+													<option></option>
+													<option></option>
+													<option></option>
+													<option></option>												
+												</select>
+										  	</div>
+										</div>
+									</form>
+						        </div>
+						    </div>
+						    <div class="container-fluid"><hr>
+					    	<div class="formuBorde row">				    	
+					    		<div class="container table-responsive">
+									<table class="table table-bordered table-hover">
+										<thead>
+											<tr>
+												<th colspan="2">Reporte de formula lacteos</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="col-xs-2" >
+													<label class="checkbox-inline">
+														<input type="checkbox" id="inlineCheckbox1" value="option1"> &nbsp;
+													</label>
+												</td>
+												<td class="col-xs-10">
+													<i class="fa fa-clipboard fa-lg" aria-hidden="true"></i> &nbsp;  Opcion1
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checkbox-inline">
+														<input type="checkbox" id="inlineCheckbox1" value="option2"> &nbsp;
+													</label>
+												</td>
+												<td>
+													<i class="fa fa-clipboard fa-lg" aria-hidden="true"></i> &nbsp;  Opcion2
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checkbox-inline">
+														<input type="checkbox" id="inlineCheckbox1" value="option3"> &nbsp;
+													</label>
+												</td>
+												<td>
+													<i class="fa fa-clipboard fa-lg" aria-hidden="true"></i> &nbsp;  Opcion3
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>								
+							</div>
+					    	<div class="col-sm-12"><br>
+					    		<form class="form-group">
+					    			<div class="col-xs-2">
+					    				<button class="btn btn-success btn-lg btn-block"><span class="fa fa-file-excel-o fa-lg" aria-hidden="true"></span> Exportar</button>
+					    			</div>
+					    			<div class="col-xs-2 col-xs-offset-8">
+					    				<button class="btn btn-danger btn-lg btn-block"><span class="fa fa-power-off fa-lg" aria-hidden="true"></span> Salir</button>
+					    			</div>
+					    		</form>
+					    	</div>
+					    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>-->
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>﻿
+
+	</body>
+</html>
